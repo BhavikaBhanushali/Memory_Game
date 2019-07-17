@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Aclonica|IM+Fell+DW+Pica&display=swap");
+
+html {
+	position: relative;
+    min-height: 100%;
+}
+
+body {
+	background: url("images/bg.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100%;
+	width: 100%;
+	margin: 0 0 60px;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+h1{
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: bold;
+	font-size: 70px;
+	text-shadow: 5px 5px 10px #d48823;
+	color: #915c3d;
+	text-align: center;
+}
+
+h2{
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #d48823;
+	color: #915c3d;
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal-backdrop {
+	z-index: -1;
+}
+
+.modal-title {
+	font-size: 20px;
+	font-family: "Aclonica", sans-serif;
+	color: #915c3d;
+}
+
+.modal-body {
+	font-size: 18px;
+	font-family: "Aclonica", sans-serif;
+}
+
+form {
+	color: #915c3d;
+}
+
+.modal-footer {
+	font-family: "Aclonica", sans-serif;
+}
+
+#mainGame {
+	margin: auto;
+}
+
+#player1 {
+	color: #fe0410;
+	margin-bottom: 0px;
+}
+
+#player2 {
+	color: #0a46f1;
+	margin-bottom: 0px;
+}
+
+#player1Div,
+#player2Div {
+	font-size: 40px;
+	font-family: "IM Fell DW Pica", serif;
+	color: black;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#player1Score,
+#player2Score {
+	padding: 0%;
+}
+
+.card {
+	background-image: url("images/back.jpg");
+	background-repeat: no-repeat;
+	float: left;
+	margin: 10px;
+	width: 100px;
+	height: 150px;
+}
+
+.card-img-top {
+	width: 100px;
+	margin-left: -15px;
+	height: 150px;
+}
+
+#reset {
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: bold;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+svg#playNow {
+    width: 250px;
+    height: 300px;
+	margin: 100px auto;
+	display: block;
+	cursor: pointer;
+	transform-origin: 50% 50%;
+}
+
+svg#playNow #triangle {
+	fill: #915c3d
+	transition: 500ms;
+	transform-origin: 50% 50%;
+}
+
+svg#playNow:hover #triangle {
+	fill: #915c3d;
+	transform-origin: 50% 50%;
+}
+
+svg #lineOne,
+svg #lineTwo {
+	transform-origin: 50% 50%;
+	transition: 1s;
+}
+
+svg:hover #lineOne {
+	transform: rotate(260deg);
+	-webkit-transform: rotate(260deg);
+	-moz-transform: rotate(260deg);
+	-o-transform: rotate(260deg);
+	transform-origin: 50% 50%;
+}
+
+svg:hover #lineTwo {
+	transform: rotate(-450deg);
+	transform-origin: 50% 50%;
+}
